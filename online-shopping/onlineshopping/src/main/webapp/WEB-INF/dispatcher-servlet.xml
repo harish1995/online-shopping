@@ -12,7 +12,8 @@
    
    ">
 	<context:component-scan base-package="rs.hsk.onlineshopping.controller" />
-    <context:component-scan base-package="rs.hsk.shoppingbackend.daoimpl" />
+	<context:component-scan base-package="rs.hsk.shoppingbackend" />
+
 	
 	
 	<bean id="viewResolver"

@@ -3,7 +3,10 @@ package rs.hsk.shoppingbackend.daoimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import rs.hsk.shoppingbackend.dao.CategoryDAO;
 import rs.hsk.shoppingbackend.dto.Category;
@@ -11,6 +14,14 @@ import rs.hsk.shoppingbackend.dto.Category;
 
 @Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
+	
+	
+	
+	
+	 @Autowired
+	 private SessionFactory sessionFactory;
+	
+	
  
 	   private static List<Category> categories=new ArrayList<>();
 	   
@@ -58,15 +69,16 @@ public class CategoryDAOImpl implements CategoryDAO {
 
 	@Override
 	public Category get(int id) {
-	
-		//enhanced for loop
-		for(Category category: categories) {
-			
-			if(category.getId()==id) return category;
-				
-		}
+		// TODO Auto-generated method stub
 		return null;
-		
+	}
+
+
+
+	@Override
+	public boolean add(Category category) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
