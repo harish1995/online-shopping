@@ -5,9 +5,6 @@
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="css1" value="/resources/css1" />
-<spring:url var="js" value="/resources/js" />
-<spring:url var="images" value="/resources/images" />
-<spring:url var="fonts" value="/resources/fonts" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
@@ -35,7 +32,7 @@
 
 
 <!-- Bootstrap cerulean them CSS -->
-<link href="${css1}/bootstrap-cerulean-theme.css" rel="stylesheet"> 
+<link href="${css1}/bootstrap-cerulean-theme.css" rel="stylesheet">
 
 
 <!-- Bootstrap dataTable theme -->
@@ -58,50 +55,16 @@
 
 		<!-- home content comes here -->
 		<div class="content">
-			<!-- loading the home content -->
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="jumbotron">
+						<h1>${errorTitle}</h1>
+						<hr />
+						<blockquote>${errorDescription}</blockquote>
 
-			<c:if test="${userClickHome==true}">
-				<%@include file="home.jsp"%>
-			</c:if>
-
-
-			<!-- load only when user clicks product -->
-			<c:if test="${userClickProducts==true}">
-				<%@include file="product.jsp"%>
-			</c:if>
-
-
-			<!-- load only when user clicks repairing -->
-			<c:if test="${userClickRepairing==true}">
-				<%@include file="repairing.jsp"%>
-			</c:if>
-
-			<!-- load only when user clicks repairing -->
-			<c:if test="${userClickContact==true}">
-				<%@include file="contact.jsp"%>
-			</c:if>
-
-
-			<!-- load only when user clicks about -->
-			<c:if test="${userClickAbout==true}">
-				<%@include file="about.jsp"%>
-			</c:if>
-
-
-
-			<!-- load only when allproducts clicks about -->
-			<c:if
-				test="${userClickAllProducts==true or userClickCategoryProducts ==true}">
-				<%@include file="listProducts.jsp"%>
-			</c:if>
-
-
-
-			<!-- load only when user click show products -->
-			<c:if
-				test="${userClickShowProduct==true}">
-				<%@include file="singleProduct.jsp"%>
-			</c:if>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
@@ -124,7 +87,7 @@
 
 		<!-- self coded java script -->
 		<script src="${js}/myapp.js"></script>
-		
+
 
 	</div>
 

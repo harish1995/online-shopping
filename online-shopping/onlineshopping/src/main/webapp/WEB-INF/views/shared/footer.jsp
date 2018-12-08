@@ -13,7 +13,7 @@
 	<div class="container">
 		 <div class="row">
 		 <div class="col-lg-12">
-		<p class="m-0 text-center text-white">Copyright &copy; HariHar
+		<p class="m-0 text-center text-white" style="font-size:15px">Copyright &copy; HariHar
 			Technology 2018</p>
 		</div>
 		</div>
