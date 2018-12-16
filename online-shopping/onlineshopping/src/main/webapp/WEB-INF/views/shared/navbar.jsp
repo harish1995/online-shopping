@@ -25,6 +25,9 @@
              <li class="nav-item" id="about">
               <a class="nav-link" href="${contextRoot}/about">About us</a>
             </li>
+            <li class="nav-item" id="manageProducts">
+              <a class="nav-link" href="${contextRoot}/manage/products">Manage products</a>
+            </li>
           </ul>
         </div>
       </div>
