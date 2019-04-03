@@ -18,7 +18,6 @@
                         
         
         <property name="context-root" value="onlineshopping"/>
-                
         <property name="java-output-path" value="/onlineshopping/target/classes"/>
                     
     

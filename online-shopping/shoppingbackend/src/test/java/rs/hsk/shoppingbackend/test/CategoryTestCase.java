@@ -59,7 +59,7 @@ public class CategoryTestCase {
 	  @Test 
 	  public void testUpdateCategory() {
 	  
-	  category = categoryDAO.get(2); category.setName("TV");
+	  category = categoryDAO.get(2); category.setName("Televison");
 	  assertEquals("Successfully updated a single category in the table!",true,
 	  categoryDAO.update(category));
 	  } 

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import rs.hsk.shoppingbackend.dao.ProductDAO;
 import rs.hsk.shoppingbackend.dto.Product;
 
@@ -53,14 +54,14 @@ public class ProductTestCase {
 		  product.getBrand()); } 
 	}*/
 		 
-/*	 
+	 
 	 @Test 
 	  public void testUpdateProduct() {
-	  product = productDAO.get(1); product.setName("Iphone 5s");
+	  product = productDAO.get(1); product.setName("Iphone 7s");
 	  assertEquals("Successfully updated a single category in the table!",true,
 	  productDAO.update(product));
 	  } 
-}*/
+}
 	
 /*	@Test
 		public void testListActiveProduct() {
@@ -70,12 +71,12 @@ public class ProductTestCase {
 	}
 	
 */
-	@Test
+	/*@Test
 	public void testListActiveProductsByCategory() {
 		assertEquals("Somthing going to wrong while fetching the list of products!", 3, productDAO.listActiveProductsByCategory(3).size());
 		//assertEquals("Something going to wrong while fetching the list of products!", 2, productDAO.listActiveProductsByCategory(1).size());
 	}
-}
+}*/
 	
 /*	@Test
 	public void testGetLatestActiveProduct() {

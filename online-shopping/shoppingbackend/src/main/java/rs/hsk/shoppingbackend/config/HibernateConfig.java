@@ -19,18 +19,18 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class HibernateConfig {
 	
 	//change the below on the dbms you change
-/*	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/onlineshopping";
+	private final static String DATABASE_URL="jdbc:h2:tcp://localhost/~/onlineshopping";
 	private final static String DATABASE_DRIVER="org.h2.Driver";
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME="sa";
-	private final static String DATABASE_PASSWORD="";*/
+	private final static String DATABASE_PASSWORD="";
 
 	
-	private final static String DATABASE_URL="jdbc:mysql://5.189.155.104:3306/onlineshopping";
+	/*private final static String DATABASE_URL="jdbc:mysql://5.189.155.104:3306/onlineshopping";
 	private final static String DATABASE_DRIVER="com.mysql.jdbc.Driver";
 	private final static String DATABASE_DIALECT="org.hibernate.dialect.MySQLDialect";
 	private final static String DATABASE_USERNAME="adminuser";
-	private final static String DATABASE_PASSWORD="mychoice";
+	private final static String DATABASE_PASSWORD="mychoice";*/
 
 	
 	// dataSource bean available here

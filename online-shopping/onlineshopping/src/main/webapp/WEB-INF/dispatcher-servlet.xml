@@ -12,9 +12,7 @@
    
    ">
 	<context:component-scan base-package="rs.hsk.onlineshopping" />
-	<context:component-scan base-package="rs.hsk.shoppingbackend" />
-
-	
+	<context:component-scan base-package="rs.hsk.shoppingbackend" />	
 	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -25,7 +23,8 @@
 	
 	<!-- loading static resources -->
 	<mvc:annotation-driven />
-	
 	<mvc:resources location="/assets/" mapping="/resources/**" />
+	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/> 	
+	
 	
 </beans>

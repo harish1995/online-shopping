@@ -92,7 +92,7 @@ public class PageController {
 	@RequestMapping(value = "/about")
 	public ModelAndView about() {
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "aboutA");
+		mv.addObject("title", "about");
 
 		// passing list of category
 		mv.addObject("categories", categoryDAO.list());

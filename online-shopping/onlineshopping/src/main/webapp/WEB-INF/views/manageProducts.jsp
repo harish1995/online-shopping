@@ -34,6 +34,39 @@
 						
 						
 						<div class="form-group">
+							<label class="control-label col-md-4" form="brand">Product Description</label>
+							<div class="col-md-8">
+								<textarea name="description" id="description" placeholder="Product description" class="form-control"> 
+								</textarea>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-md-4" form="unitPrice">Enter unit price: </label>
+							<div class="col-md-8">
+								<input type="text" name="unitPrice" id="unitPrice" placeholder="Unit Price in &#8377" class="form-control">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-md-4" form="quantity">Enter unit quantity: </label>
+							<div class="col-md-8">
+								<input type="text" name="quantity" id="quantity" placeholder="Quantity Available" class="form-control"> 
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-md-4" form="categoryId">Select category: </label>
+							<div class="col-md-8">
+								<select class="form-control" id="categoryId" name="categoryId">
+									<option value="1">Category One</option>
+									<option value="2">Category Two</option>
+								</select>
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
 							<div class="col-md-offset-4 col-md-8">
 								<input type="submit" name="submit" id="submit" value="submit" class="btn btn-primary"> 
 								
@@ -44,7 +77,7 @@
 					</form>
 
 
-				</div>
+				</div>l
 
 			</div>
 
