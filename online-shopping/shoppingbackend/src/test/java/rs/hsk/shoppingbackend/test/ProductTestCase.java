@@ -26,10 +26,10 @@ public class ProductTestCase {
 	}
 
 
-	/*	@Test public void testAddProduct() {
+		@Test public void testAddProduct() {
 		  
 		  product = new Product();
-		  
+	
 		    product.setName("oppo Selfie f5");
 			product.setBrand("Oppo");
 			product.setDescription("This is some description for oppo mobile phones");
@@ -41,8 +41,7 @@ public class ProductTestCase {
 			assertEquals("Something going wrong while inserting new product", true, productDAO.add(product));
 
 		  }	
-	*/
-	
+}	
 	
 /*	@Test public void testGetProduct() {
 		  
@@ -55,13 +54,13 @@ public class ProductTestCase {
 	}*/
 		 
 	 
-	 @Test 
+/*	 @Test 
 	  public void testUpdateProduct() {
-	  product = productDAO.get(1); product.setName("Iphone 7s");
+	  product = productDAO.get(65); product.setName("Iphone 7s");
 	  assertEquals("Successfully updated a single category in the table!",true,
 	  productDAO.update(product));
 	  } 
-}
+}*/
 	
 /*	@Test
 		public void testListActiveProduct() {

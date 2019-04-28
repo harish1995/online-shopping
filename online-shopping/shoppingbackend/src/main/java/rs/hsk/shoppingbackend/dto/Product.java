@@ -16,6 +16,7 @@ public class Product {
 	// private fields
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String code;
 	private String name;
@@ -142,12 +143,11 @@ public class Product {
 		this.views = views;
 	}
 
-	// toString method call
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", code=" + code + ", name=" + name + ", brand=" + brand + ", description="
 				+ description + ", unitprice=" + unitprice + ", quantity=" + quantity + ", active=" + active
-				+ ", categoryId=" + categoryId + ", supplierId=" + supplierId + ", purchase=" + purchases + ", views="
+				+ ", categoryId=" + categoryId + ", supplierId=" + supplierId + ", purchases=" + purchases + ", views="
 				+ views + "]";
 	}
 

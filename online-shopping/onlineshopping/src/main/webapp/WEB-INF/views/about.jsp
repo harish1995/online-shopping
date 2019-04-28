@@ -32,6 +32,8 @@
 
 				</div>
 			</div>
+			
 		</div>
+		<h1>These is About us page. Still is  under construction..!!</h1>
 	</div>
 </div>
